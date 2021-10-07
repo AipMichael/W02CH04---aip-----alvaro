@@ -13,11 +13,13 @@ class SkylabArray {
   }
 }
 
-const pia = new SkylabArray();
+/* const pia = new SkylabArray();
 // pia.length; // 0
 // pia.push(2, 3, 4);
 // pia.length; // 3
 // pia.unshift();
 // pia; // {"0":2, "1":4}
 
-console.log(pia.empujar("asd", "asd", "sd", "asd"));
+console.log(pia.empujar("asd", "asd", "sd", "asd")); */
+
+module.exports = { SkylabArray };

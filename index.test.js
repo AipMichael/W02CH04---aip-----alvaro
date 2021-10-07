@@ -1,14 +1,15 @@
-const alpia = new SkylabArray {}
+const { SkylabArray } = require("./index");
 
-describe("this method (.empujar) pushes any received value and includes it in the object shared and returns the number of elements inside", function () {
-    test("when method receives 5, it should return 'it should'", () => {
+const alpia = new SkylabArray();
 
-        //Arrange
-        const n1 = 5;
-        const expected = 1;
-        //Act
-        const result = alpia.empujar(5);
-        // Assert
-        expect(result).toBe(expected);
-    });
-}
+describe("this method (.empujar) pushes any received value and includes it in the object shared and returns the number of elements inside", () => {
+  test("when method receives 5, it should return 'it should'", () => {
+    // Arrange
+    const n1 = 5;
+    const expected = 1;
+    // Act
+    const result = alpia.empujar(5);
+    // Assert
+    expect(result).toBe(expected);
+  });
+});

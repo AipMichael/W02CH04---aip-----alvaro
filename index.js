@@ -31,12 +31,11 @@ class SkylabArray {
   constructor(...parametro) {}
 
   empujar(...objeto) {
-    //  const objeto = loQueSea.split(",");
-    let limite = this.length;
+    const limite = this.length;
     for (let i = this.length; i < limite + objeto.length; i++) {
       this[i] = objeto[i - limite];
     }
-    //console.log("hola", this);
+
     return objeto.length;
   }
 }
@@ -49,3 +48,6 @@ pia.unshift();
 pia; // {"0":2, "1":4}*/
 
 
+console.log(pia.empujar("asd", "asd", "sd", "asd")); */
+
+module.exports = { SkylabArray };

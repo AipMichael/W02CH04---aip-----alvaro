@@ -1,13 +1,14 @@
+const alpia = new SkylabArray {}
 
-empujar(...objeto) {
-  //  const objeto = loQueSea.split(",");
-    for(let i = this.length; i < (this.length + objeto.length) ; i++  ){
-      
-      this[i] += objeto[i-this.length];
-    }
+describe("this method (.empujar) pushes any received value and includes it in the object shared and returns the number of elements inside", function () {
+    test("when method receives 5, it should return 'it should'", () => {
 
-  
-  return objeto.length
-  }
-
-
+        //Arrange
+        const n1 = 5;
+        const expected = 1;
+        //Act
+        const result = alpia.empujar(5);
+        // Assert
+        expect(result).toBe(expected);
+    });
+}

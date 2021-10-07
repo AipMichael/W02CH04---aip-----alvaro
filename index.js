@@ -4,12 +4,11 @@ class SkylabArray {
   }
 
   empujar(...objeto) {
-    //  const objeto = loQueSea.split(",");
-    let limite = this.length;
+    const limite = this.length;
     for (let i = this.length; i < limite + objeto.length; i++) {
       this[i] = objeto[i - limite];
     }
-    //console.log("hola", this);
+
     return objeto.length;
   }
 }

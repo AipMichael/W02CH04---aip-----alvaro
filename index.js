@@ -16,12 +16,10 @@ class SkylabArray {
 
   alguno(condicion) {
     
-  
     let loCumple = false;
     
     for (let j = 0; j < this.length; j++) {
-      this[this.length] = objeto[this.length];
-      this.length++
+      this[j];
       if(condicion){
         loCumple = true;
       }

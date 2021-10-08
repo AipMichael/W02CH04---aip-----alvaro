@@ -19,10 +19,11 @@ class SkylabArray {
     let loCumple = false;
     
     for (let j = 0; j < this.length; j++) {
-      this[j];
+      loCumple = condicion ? true : false;
+     /* this[j] =;
       if(condicion){
         loCumple = true;
-      }
+      }*/
     }
     
     return loCumple;

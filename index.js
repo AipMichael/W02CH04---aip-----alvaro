@@ -12,9 +12,22 @@ class SkylabArray {
       this.length++
     }
     return this.length;
+  }
+
+  alguno(condicion) {
+    
+    let loCumple = false;
+    
+    for (let j = 0; j < this.length; j++) {
+      loCumple = condicion ? true : false;
+     /* this[j] =;
+      if(condicion){
+        loCumple = true;
+      }*/
     }
-    //console.log("hola", this);
-  
+    
+    return loCumple;
+    }
   }
 }
 
@@ -45,7 +58,7 @@ pia.length; // 0
 pia.push(2, 3, 4);
 pia.length; // 3
 pia.unshift();
-pia; // {"0":2, "1":4}*/
+pia; // {"0":2, "1":4}
 
 
 console.log(pia.empujar("asd", "asd", "sd", "asd")); */
